@@ -1,4 +1,3 @@
-
 public class Curso {
     private String nomeCurso;
     private Double duracao;

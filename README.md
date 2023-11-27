@@ -1,18 +1,27 @@
-## Getting Started
+# Trabalho Final de POO
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java badge" />
 
-## Folder Structure
+Este é um projeto desenvolvido para a disciplina de Programação Orientada a Objetos da Universidade do Estado de Mato Grosso (UNEMAT). O objetivo deste projeto é implementar um sistema de gerenciamento de uma clínica veterinária, utilizando os conceitos de orientação a objetos, herança, polimorfismo, encapsulamento e exceções.
 
-The workspace contains two folders by default, where:
+## Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O sistema permite:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Cadastrar e consultar Alunos, Professores e disciplinas;
+- Agendar e realizar consultas;
+- Emitir relatórios de consultas realizada.
+- Salvar e carregar os dados em arquivos.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+## Como executar
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Para executar o projeto, você precisa ter o Java instalado na sua máquina. Você pode baixar o Java [aqui].
+
+Depois de instalar o Java, você pode clonar este repositório e executar o arquivo Main.java na sua IDE de preferência. Ou você pode baixar o arquivo .jar na aba de releases e executá-lo pelo terminal com o comando:
+
+`java -jar TrabalhoFinalPOO.jar`
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE] para mais detalhes.

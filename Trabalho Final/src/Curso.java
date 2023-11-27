@@ -1,17 +1,29 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Curso {
+    private int id;
     private String nomeCurso;
     private String duracao;
-    private List<Diciplina> diciplinaLista;
+    private List<Diciplina> diciplinaLista = new ArrayList<>();
 
     //Contrutor
-    public Curso(String nomeCurso, String duracao) {
+    public Curso(int id,String nomeCurso, String duracao) {
+        this.id=id;
         this.nomeCurso = nomeCurso;
         this.duracao = duracao;
     }
 
     //Metodos de acesso
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNomeCurso() {
         return nomeCurso;
     }
@@ -30,10 +42,6 @@ public class Curso {
         return diciplinaLista;
     }
 
-
-    public void setDiciplinaLista(List<Diciplina> diciplinaLista) {
-        this.diciplinaLista = diciplinaLista;
-    }
 
 
 }

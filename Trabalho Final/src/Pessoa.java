@@ -2,14 +2,24 @@ public abstract class Pessoa {
     private String nome ;
     private String cpf;
     private String celular;
+    private int id;
 
     //Contrutor
-    public Pessoa(String nome, String cpf, String celular) {
+    public Pessoa(int id,String nome, String cpf, String celular) {
+        this.id=id;
         this.nome = nome;
         this.cpf = cpf;
         this.celular = celular;
     }
     //Metodos de acesso
+
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }

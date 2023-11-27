@@ -1,20 +1,28 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Professor extends Pessoa {
     private String cracha;
     private String salario;
     private String formacao;
-    private List<Diciplina> diciplinas;   
+    private List<Diciplina> diciplinas = new ArrayList<>(); 
 
     //Contrutor
-    public Professor(String nome, String cpf, String celular, String cracha, String salario, String formacao) {
-        super(nome, cpf,  celular);
+    public Professor(int id,String nome, String cpf, String celular, String cracha, String salario, String formacao) {
+        super(id,nome, cpf,  celular);
         this.cracha = cracha;
         this.salario = salario;
         this.formacao = formacao;
     }
         
     //Metodos de Acesso
+
+    @Override
+    public void setId(int id) {
+        super.setId(id);
+        id +=id;
+    }
+
     public String getCracha() {
         return cracha;
     }

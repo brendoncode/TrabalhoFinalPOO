@@ -1,19 +1,31 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Diciplina {
+    private int id=15;
     private String nomeDiciplina;
     private String cargaHoraria;
     private Curso curso;
     private Professor professor;
-    private List<Aluno> aluno;
-    
-    //Contrutor
-    public Diciplina(String nomeDiciplina, String cargaHoraria, Curso curso) {
+    private List<Aluno> aluno = new ArrayList<>();
+
+    public Diciplina(int id,String nomeDiciplina, String cargaHoraria, Curso curso) {
+        this.id=id;
         this.nomeDiciplina = nomeDiciplina;
         this.cargaHoraria = cargaHoraria;
         this.curso = curso;
     }
+
     //Metodos de Acesso
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id += id;
+    }
+
     public String getNomeDiciplina() {
         return nomeDiciplina;
     }
@@ -50,7 +62,11 @@ public class Diciplina {
         this.aluno = aluno;
     }
 
-
+    public void listAlunos(){
+        for(Aluno alunoTemp : this.aluno){
+            System.out.println(alunoTemp.getId() + ". " +alunoTemp.getNome());
+        }
+    }
 
     
 }

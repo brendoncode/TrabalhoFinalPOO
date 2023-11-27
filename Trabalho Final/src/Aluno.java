@@ -1,21 +1,26 @@
+import java.util.List;
+
 public class Aluno extends Pessoa {
-    private int matricula;
+    private String matricula;
     private String dataNascimento;
-    private Double[] notas;
-    private Diciplina[] diciplina;
+    private List<Double> notas;
+    private List<Diciplina> diciplina;
     private Curso curso;
 
-    public Aluno(String nome, String cpf, String celular, int matricula, String dataNascimento) {
+    //Construtor
+    public Aluno(String nome, String cpf, String celular, String matricula, String dataNascimento, Curso curso) {
         super(nome, cpf, celular);
         this.matricula = matricula;
         this.dataNascimento = dataNascimento;
+        this.curso = curso;
     }
 
-    public int getMatricula() {
+    //Metodos de acesso
+    public String getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(int matricula) {
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
 
@@ -28,24 +33,21 @@ public class Aluno extends Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
-
-    public Double[] getNotas() {
+    public List<Double> getNotas() {
         return notas;
     }
 
-    public void setNotas(Double[] notas) {
-        this.notas = notas;
+    public void setNotas(Double nota) {
+        this.notas.add(nota);
     }
-
-
-    public Diciplina[] getDiciplina() {
+ 
+    public List<Diciplina> getDiciplina() {
         return diciplina;
     }
 
-    public void setDiciplina(Diciplina[] diciplina) {
+    public void setDiciplina(List<Diciplina> diciplina) {
         this.diciplina = diciplina;
     }
-
 
     public Curso getCurso() {
         return curso;
@@ -54,6 +56,11 @@ public class Aluno extends Pessoa {
     public void setCurso(Curso curso) {
         this.curso = curso;
     }
-    
+
+    public String listAlunos(){
+        return getNome();
+    }
+        
+
 
 }

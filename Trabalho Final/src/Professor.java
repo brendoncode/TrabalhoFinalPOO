@@ -1,35 +1,34 @@
 import java.util.List;
 
 public class Professor extends Pessoa {
-    private int cracha;
-    private Double salario;
+    private String cracha;
+    private String salario;
     private String formacao;
     private List<Diciplina> diciplinas;   
-    private List<Aluno> alunos;
 
-
-    public Professor(String nome, String cpf, String celular, int cracha, Double salario, String formacao) {
+    //Contrutor
+    public Professor(String nome, String cpf, String celular, String cracha, String salario, String formacao) {
         super(nome, cpf,  celular);
         this.cracha = cracha;
         this.salario = salario;
         this.formacao = formacao;
     }
         
-
-    public int getCracha() {
+    //Metodos de Acesso
+    public String getCracha() {
         return cracha;
     }
 
-    public void setCracha(int cracha) {
+    public void setCracha(String cracha) {
         this.cracha = cracha;
     }
 
     
-    public Double getSalario() {
+    public String getSalario() {
         return salario;
     }
 
-    public void setSalario(Double salario) {
+    public void setSalario(String salario) {
         this.salario = salario;
     }
 
@@ -51,23 +50,5 @@ public class Professor extends Pessoa {
     public void setDiciplinas(List<Diciplina> diciplinas) {
         this.diciplinas = diciplinas;
     }
-
-
-
-    public List<Aluno> getAlunos() {
-        return alunos;
-    }
-
-
-    public void setAlunos(List<Aluno> alunos) {
-        this.alunos = alunos;
-    }
-
-    
-
-
-
-
-
 
 }

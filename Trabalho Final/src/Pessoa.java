@@ -3,12 +3,13 @@ public abstract class Pessoa {
     private String cpf;
     private String celular;
 
+    //Contrutor
     public Pessoa(String nome, String cpf, String celular) {
         this.nome = nome;
         this.cpf = cpf;
         this.celular = celular;
     }
-
+    //Metodos de acesso
     public String getNome() {
         return nome;
     }
@@ -33,5 +34,7 @@ public abstract class Pessoa {
     public void setCelular(String celular) {
         this.celular = celular;
     }
+
+    
     
 }

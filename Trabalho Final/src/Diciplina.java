@@ -1,17 +1,19 @@
+import java.util.List;
+
 public class Diciplina {
     private String nomeDiciplina;
-    private Double cargaHoraria;
+    private String cargaHoraria;
     private Curso curso;
     private Professor professor;
-    private Aluno[] aluno;
-
+    private List<Aluno> aluno;
     
-
-    public Diciplina(String nomeDiciplina, Double cargaHoraria) {
+    //Contrutor
+    public Diciplina(String nomeDiciplina, String cargaHoraria, Curso curso) {
         this.nomeDiciplina = nomeDiciplina;
         this.cargaHoraria = cargaHoraria;
+        this.curso = curso;
     }
-
+    //Metodos de Acesso
     public String getNomeDiciplina() {
         return nomeDiciplina;
     }
@@ -19,10 +21,10 @@ public class Diciplina {
         this.nomeDiciplina = nomeDiciplina;
     }
     
-    public Double getCargaHoraria() {
+    public String getCargaHoraria() {
         return cargaHoraria;
     }
-    public void setCargaHoraria(Double cargaHoraria) {
+    public void setCargaHoraria(String cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
 
@@ -40,13 +42,15 @@ public class Diciplina {
         this.professor = professor;
     }
      
-    public Aluno[] getAluno() {
+    public List<Aluno> getAluno() {
         return aluno;
     }
-    public void setAluno(Aluno[] aluno) {
+
+    public void setAluno(List<Aluno> aluno) {
         this.aluno = aluno;
     }
-    
+
+
 
     
 }

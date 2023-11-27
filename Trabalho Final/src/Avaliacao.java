@@ -33,8 +33,6 @@ public class Avaliacao {
         this.aluno = aluno;
     }
 
-
-
     
 
 }

@@ -1,15 +1,17 @@
+import java.util.List;
+
 public class Curso {
     private String nomeCurso;
-    private Double duracao;
-    private Diciplina[] diciplinaLista;
-    public int oi;
+    private String duracao;
+    private List<Diciplina> diciplinaLista;
 
-    public Curso(String nomeCurso, Double duracao) {
+    //Contrutor
+    public Curso(String nomeCurso, String duracao) {
         this.nomeCurso = nomeCurso;
         this.duracao = duracao;
     }
 
-
+    //Metodos de acesso
     public String getNomeCurso() {
         return nomeCurso;
     }
@@ -17,17 +19,21 @@ public class Curso {
         this.nomeCurso = nomeCurso;
     }
     
-    public Double getDuracao() {
+    public String getDuracao() {
         return duracao;
     }
-    public void setDuracao(Double duracao) {
+    public void setDuracao(String duracao) {
         this.duracao = duracao;
     }
 
-    public Diciplina[] getDiciplinaLista() {
+    public List<Diciplina> getDiciplinaLista() {
         return diciplinaLista;
     }
-    public void setDiciplinaLista(Diciplina[] diciplinaLista) {
+
+
+    public void setDiciplinaLista(List<Diciplina> diciplinaLista) {
         this.diciplinaLista = diciplinaLista;
     }
+
+
 }

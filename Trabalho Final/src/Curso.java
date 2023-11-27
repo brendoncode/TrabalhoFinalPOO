@@ -42,6 +42,10 @@ public class Curso {
         return diciplinaLista;
     }
 
-
+    public void listDiciplinas(){
+        for(Diciplina disciplinaTemp : diciplinaLista){
+            System.out.println(disciplinaTemp.getId() + ". " + disciplinaTemp.getNomeDiciplina() );
+        }
+    }
 
 }

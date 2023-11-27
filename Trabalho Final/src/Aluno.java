@@ -4,7 +4,6 @@ import java.util.List;
 public class Aluno extends Pessoa {
     private String matricula;
     private String dataNascimento;
-    private List<Double> notas = new ArrayList<>();
     private List<Diciplina> diciplinas = new ArrayList<>();
     private Curso curso;
     private List<Avaliacao> avaliacaos = new ArrayList<>();
@@ -40,14 +39,6 @@ public class Aluno extends Pessoa {
     public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-
-    public List<Double> getNotas() {
-        return notas;
-    }
-
-    public void setNotas(Double nota) {
-        this.notas.add(nota);
-    }
  
     public List<Diciplina> getDiciplina() {
         return diciplinas;
@@ -73,19 +64,21 @@ public class Aluno extends Pessoa {
         this.avaliacaos.add(avaliacaos);
     }
 
-    
+    //Metodo para listar as disciplinas cadastradas no aluno   
     public void listarDiciplinas(){
         for(Diciplina diciplinaTemp : this.diciplinas){
             System.out.println(diciplinaTemp.getId() +diciplinaTemp.getNomeDiciplina());
         }
 
     }
-
+    //metodo para imprimir a situação do aluno
     public void imprimirSituacao(){
         for(Avaliacao avaliacao : avaliacaos){
+            System.out.println("---------------------------------------------------------/n");
             System.out.println("nome : "+ avaliacao.getAluno());
             System.out.println("nome : "+ avaliacao.getData());
-            System.out.println("nome : "+ avaliacao.getMedia());      
+            System.out.println("nome : "+ avaliacao.getMedia());  
+            System.out.println("---------------------------------------------------------/n");    
         }
     }
 

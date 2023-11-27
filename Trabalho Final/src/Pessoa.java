@@ -1,8 +1,8 @@
 public abstract class Pessoa {
+    private int id;
     private String nome ;
     private String cpf;
     private String celular;
-    private int id;
 
     //Contrutor
     public Pessoa(int id,String nome, String cpf, String celular) {
@@ -44,7 +44,5 @@ public abstract class Pessoa {
     public void setCelular(String celular) {
         this.celular = celular;
     }
-
-    
     
 }
